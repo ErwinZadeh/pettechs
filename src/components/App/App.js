@@ -24,6 +24,7 @@ import RegisterPage from "../RegisterPage/RegisterPage";
 import ClientStepper from "../ClientStepper/ClientStepper";
 import ClientProfile from "../ClientProfile/ClientProfile";
 import ClientServiceRequest from "../ClientServiceRequest/ClientServiceRequest";
+import VTServiceRequest from "../VTServiceRequest/VTServiceRequest";
 import VTStepper from "../VTStepper/VTStepper";
 import SearchPage from "../SearchPage/SearchPage";
 
@@ -75,6 +76,11 @@ class App extends Component {
               exact
               path="/client_service"
               component={ClientServiceRequest}
+            />
+            <Route
+              exact
+              path="/vt-service"
+              component={VTServiceRequest}
             />
             <Route exact path="/search" component={SearchPage} />
             <Route
